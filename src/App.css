@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgba(130, 18, 18, 0.224);
+    width: 100vw;
+    height: 100vh;
+}
+.main-container{
+    width: 450px;
+    background-color: rgba(192, 186, 186, 0.666);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+.inc-exp-container{
+    width: 380px;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+.income{
+    border-right:4px solid gray ;
+    padding-right: 70px;
+}
+.income h4{
+  font-size: 18px;
+  color: green;
+}
+.income p{
+    font-size: 25px;
+    color: green;
+  }
+  .expense h4{
+    font-size: 18px;
+    color: red;
+  }
+  .expense p{
+      font-size: 25px;
+      color: red;
+    }
+.transaction-list{
+    width: 380px;
+    padding: 10px;
+}
+.transaction-list h3{
+    width: 100%;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(93, 90, 90, 0.786);
+    border-bottom: 2px solid rgba(93, 90, 90, 0.786);
+    padding: 10px;
+}
+ .transaction-list li{
+    list-style: none;
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    /* border-radius: 10px; */
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+} 
+.list li.plus {
+    border-right: 5px solid #2ecc71;
+  }
+  
+  .list li.minus {
+    border-right: 5px solid #c0392b;
+  }
+  
+  .delete-btn {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    height: 100%;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .list li:hover .delete-btn {
+    opacity: 1;
+  }
+  .add-transaction{
+      padding: 10px;
+  }
+  .form-control{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+  }
+  .form-control input{
+      height: 50px;
+      padding: 5px;
+      outline: none;
+      border: none;
+      border-radius: 5px;font-size: 20px;
+  }
+  .form-control label{
+      font-size: 20px;
+  }
+  .btn{
+      width: 100%;
+      padding: 20px;
+      font-size: 20px;
+      background-color: white;
+      border: #2ecc71;
+      color: #2ecc71;
+      margin: 10px 0px;
+      cursor: pointer;
+  }
+  .btn:hover{
+      background-color: #2ecc71;
+      color: white;
+  }
+  .warning{
+      color: red;
+      animation: example 500ms infinite;
+  }
+  @keyframes example {
+    0%   {color: red;}
+    
+    50%  {color: white;}
+    100% {color: red;}
+  }
